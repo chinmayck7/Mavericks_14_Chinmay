@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task bar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 20px;
+          background: linear-gradient(135deg,#153677,#4e085f);
+        }
+    
+        table {
+          width: 100%;
+          border-collapse: collapse;
+          margin-top: 20px;
+        }
+    
+        th, td {
+          padding: 10px;
+          text-align: center;
+          border: 1px solid #ddd;
+        }
+    
+        th {
+          background-color: #f2f2f2;
+        }
+    
+        button {
+          margin: 10px;
+          padding: 5px;
+          cursor: pointer;
+        }
+      </style>
+    
+</head>
+<body>
+
+  <p style="font-size:40px;margin-left:20px ;COLOR:WHITE;"><img src="bhaikarle.jpg" width="150px" height="150px" style="margin-left:10px;border-radius: 40px;">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;TASK ORGANISER</p><br><br>
+    
+    <div class="container1">
+        <div class="box1">
+<br>
+            <p class="box12" style="background-color:rgb(197, 197, 234);">DASHBOARD</p>
+            <a href="aboutus.html" style="text-decoration: none;"><p class="box12">ABOUT US</p></a>
+            <br>
+            <br>
+
+
+        </div>
+        
+        
+        
+        
+        <div class="box1">
+           <div class="container2">
+            <div style="margin-top: 100px;">
+              <h1>TO-DO LIST</TO-DO></h1><br>
+    <form id="taskForm">
+        <input type="text" id="taskName" placeholder="Task Name" required style="border: 2px solid black;border-radius:20px;width:200px;">
+        <input type="text" id="taskDescription" placeholder="Task Description" required style="border: 2px solid black;border-radius:20px;width:400px;">
+        <input type="date" id="taskDate" required style="border: 2px solid black;border-radius:20px;">
+        <input type="time" id="taskTime" required style="border: 2px solid black;border-radius:20px;width:100px">&emsp;&emsp;&emsp;
+        <button type="submit">Add Task</button><br><br>
+    </form>
+
+    <div id="taskList"></div>
+
+            </div>
+            <div>
+              
+            </div>
+            
+            <script src="script.js"></script>
+            </div>
+
+
+           </div>
+           <div class="box1">
+            <br>
+            <p style="color:white;font-size:22px;text-align:center;margin-top:-10px">REVIEW BOT</p>
+            <div class="chat-container" style="margin-top:40px;">
+              <div id="chat-display"></div>
+              <div class="chat-input">
+                  <input type="text" id="user-input" placeholder="Type your message...">
+                  <button onclick="sendMessage()">Send</button>
+              </div>
+              
+          </div>
+           
+           
+            
+
+        </div>
+        
+        
+        
+        
+        
+        <div class="box1">
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
