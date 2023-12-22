@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body style="background: linear-gradient(135deg,#153677,#4e085f);color:white">
+
+<div class="container" style="width: 600px;" id="passward" >
+<p style="font-size: xx-large;">DASHBOARD</p>
+<p>Sign-In</p>
+<p>to continue</p>
+<input type="email" placeholder="Email or phone " ><br><br><br>
+<p>Not your computer? Use Guest mode to sign in privately</p>
+<br>
+<div style="display: flex;">
+    <select name="Account">
+        <option value="select">Create account</option>
+        <option>PREMIUM</option>
+        <option>REGULAR</option>
+        <option>RESTRICTED</option>
+    </select>
+    <button onclick="acc()" >NEXT</button>
+</div><br>
+<div >
+Alreay have an account
+<button style="margin-left: 0px; border: 6px solid white;background-color: white;color:  #0b57d0;"onclick="login()">login</button>
+</div>
+</div>
+
+<script>
+    function acc()
+    {
+        document.getElementById("passward").innerHTML="<p style='font-size: xx-large;'>DASHBOARD</p><p>Create your account</p><p>Your Name<br><input type='text' placeholder='firstname'><br><br><input type='text' placeholder='Surname'></p><br><br><p>DOB&emsp;<input type='date'></p><p>Password&emsp;<input type='password'></p><br><p>You are one step to go</p><form style='margin-left:150px;'action='index.html'><button>Create</button></form>";
+    }
+    function login()
+    {
+        document.getElementById("passward").innerHTML="<pstyle='font-size: xx-large;'>DASHBOARD</p><p></p><p>Email&emsp;<input type='email' placeholder='email'></p><p>Password&emsp;<input type='password'></p><br><p>You are one step to go</p><form style='margin-left:170px' action='index.html'><button>login</button></form>"; 
+    }    
+</script>
+</body>
+</html>
